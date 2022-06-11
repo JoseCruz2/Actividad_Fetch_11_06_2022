@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+:root{
+    --colorNavegador:#333;
+    --colorLetraBoton: #fff;
+    --colorBoton: #df4881, #c430df;
+}
 .hero{
     width: 100%;
     min-height: 100vh;
-    background-image: url(img/back-image.png);
+    /* background-image: url(../img/back-image.png); */
     background-position: center;
     background-size: cover;
     padding: 10px 10%;
@@ -32,21 +36,21 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #333;
-    font-weight: 400;
+    color: var(--colorNavegador);
+    font-weight: 500;
 }
 .login-btn{
     text-decoration: none;
-    color: #333;
+    color: var(--colorNavegador);
     margin-right: 15px;
-    font-weight: 400;
+    font-weight: 500;
 }
 .btn{
     display: inline-block;
     text-decoration: none;
     padding: 14px 40px;
-    color: #fff;
-    background-image: linear-gradient(45deg, #df4881, #c430d7);
+    color: var(--colorLetraBoton);
+    background-image: linear-gradient(45deg, var(--colorBoton));
     font-size: 14px;
     border-radius: 30px;
     border-top-right-radius: 0;
@@ -57,12 +61,12 @@ nav ul li a{
     max-width: 600px;
 }
 .content h1{
-   font-size: 70px;
-   color: #222; 
+    font-size: 70px;
+    color: var(--colorNavegador);
 }
 .content p{
     margin: 10px 0 30px;
-    color: #333;
+    color: var(--colorNavegador);
     animation-delay: 0.5s;
 }
 .content .btn{
@@ -72,6 +76,7 @@ nav ul li a{
 }
 .btn:hover{
     border-top-right-radius: 30px;
+    border-bottom-left-radius: 0;
 }
 .feature-img{
     width: 530px;
@@ -87,10 +92,9 @@ nav ul li a{
     transform: translateY(30px);
     animation: moveup 0.5s linear forwards;
 }
-@keyframes moveup{
+@keyframes moveup {
     100%{
         opacity: 1;
         transform: translateY(0px);
-
     }
 }

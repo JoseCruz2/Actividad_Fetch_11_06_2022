@@ -1,0 +1,39 @@
+{
+    "img": "img/logo.png",
+    "fondo": "img/back-image.png",
+    "menu": [
+        {
+            "href": "#",
+            "value": "Características"
+        },
+        {
+            "href": "#",
+            "value": "Como Trabajamos"
+        },
+        {
+            "href": "#",
+            "value": "Privacidad"
+        }
+    ],
+    "avance": [
+        {
+            "href": "#",
+            "value": "Ingresar"
+        },
+        {
+            "href": "#",
+            "value": "Descargar App"
+        }
+    ],
+    "content": {
+        "titulo": "Hacer <br> Nuevos Amigos",
+        "contenido": "Socially es una nueva plataforma de redes sociales para hacer nuevos amigos en línea en el mundo. Ahora exploremos todas sus increíbles características",
+        "boton": [
+            {
+                "href": "#",
+                "value": "Entra Ahora"
+            }
+        ],
+        "img": "img/pic.png"
+    }
+}
